@@ -158,14 +158,42 @@ section {
   font-size: 20px;
   color: #FBFBFB;
   border: 1px solid #43566B;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .btn:hover {
   background: #FBFBFB;
   color: #43566B;
+}
+
+.btn-second {
+  min-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background: #FBFBFB;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #43566B;
+  border: 1px solid #43566B;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn-second:hover {
+  background: #43566B;
+  color: #FBFBFB;
 }
 
 .section-title {
@@ -727,6 +755,47 @@ nav {
   font-weight: 700;
   font-size: clamp(2.188rem, 1.847rem + 1.7vw, 3.125rem);
   color: #43566B;
+}
+
+.news__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.news__item {
+  background: #F6F8FA;
+  border-radius: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+  padding: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.news__item-title {
+  font-size: clamp(1.25rem, 1.205rem + 0.23vw, 1.375rem);
+}
+
+.news__item-text {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  padding: 20px 0 40px;
+}
+
+.news__item-btn {
+  font-size: clamp(1.188rem, 1.119rem + 0.34vw, 1.375rem);
 }
 
 .footer {
