@@ -336,6 +336,25 @@ nav {
   background-position: top top;
 }
 
+.hero-2 {
+  background-image: url(../img/cloud-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top top;
+}
+
+.hero-2 .hero__wrapper {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.hero-2 .hero__subtitle {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+}
+
 .hero__wrapper {
   padding-top: 180px;
   display: grid;
@@ -357,6 +376,15 @@ nav {
   font-size: clamp(1.375rem, 1.227rem + 0.74vw, 1.875rem);
   line-height: 1.3;
   color: #454545;
+}
+
+.hero__subtitle a {
+  color: #52C8D1;
+  text-decoration: underline;
+}
+
+.hero__subtitle a:hover {
+  text-decoration: none;
 }
 
 .hero__box {
@@ -503,6 +531,10 @@ nav {
   font-weight: 600;
 }
 
+.benefits-2 .benefits__wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .benefits__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -609,6 +641,38 @@ nav {
   border-radius: 20px;
   max-width: 100%;
   width: 100%;
+}
+
+.stats__item {
+  height: clamp(13.125rem, 11.534rem + 7.95vw, 17.5rem);
+  background: #E6EEF7;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  padding-top: clamp(3.125rem, 2.67rem + 2.27vw, 4.375rem);
+}
+
+.stats__item-title {
+  font-weight: 700;
+  font-size: clamp(3.125rem, 2.898rem + 1.14vw, 3.75rem);
+  text-align: center;
+  color: #43566B;
+}
+
+.stats__item-text {
+  font-size: 20px;
+  text-align: center;
+  color: #1E1E1E;
 }
 
 .footer {
@@ -807,6 +871,10 @@ nav {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .benefits-2 .benefits__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -825,6 +893,10 @@ nav {
   }
 
   .common__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-2 .benefits__wrapper {
     grid-template-columns: 1fr;
   }
 
