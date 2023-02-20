@@ -757,6 +757,76 @@ nav {
   color: #43566B;
 }
 
+.simple__choice {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+}
+
+.simple__choice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem);
+}
+
+.simple__choice-title {
+  font-size: clamp(1.625rem, 1.534rem + 0.45vw, 1.875rem);
+  color: #1E1E1E;
+}
+
+.simple__choice-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+}
+
+.simple__choice-item {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  color: #1E1E1E;
+  position: relative;
+  padding-left: 20px;
+}
+
+.simple__choice-item::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  border-radius: 50%;
+  background: #1E1E1E;
+}
+
+.simple__choice-btn {
+  padding: 10px 50px;
+}
+
+.simple__choice-btn.black-bg {
+  background: #1E1E1E;
+}
+
+.simple__choice-btn.black-bg:hover {
+  background: #FBFBFB !important;
+  color: #43566B !important;
+}
+
 .news__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -796,6 +866,48 @@ nav {
 
 .news__item-btn {
   font-size: clamp(1.188rem, 1.119rem + 0.34vw, 1.375rem);
+}
+
+.tarif__wrapper {
+  padding-top: 50px;
+}
+
+.tarif__item {
+  background: #FBFBFB;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+}
+
+.tarif__item-title {
+  text-align: center;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+
+.tarif__item-price {
+  font-size: 20px;
+  text-align: center;
+  color: #52C8D1;
+}
+
+.tarif__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+
+.tarif__item-btn {
+  font-size: 20px;
+  margin-top: auto;
 }
 
 .footer {
@@ -1051,6 +1163,17 @@ nav {
 
   .simple__big {
     min-width: auto;
+  }
+
+  .simple__choice {
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
+  }
+
+  .simple__choice-box {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 
   .footer__wrapper {
