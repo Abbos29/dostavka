@@ -563,10 +563,15 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.benefits-4 .benefits__wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .benefits__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: 20px 20px;
 }
 
@@ -574,6 +579,25 @@ nav {
   background: #F9F9F9;
   border-radius: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
   padding: clamp(0.938rem, 0.845rem + 0.46vw, 1.25rem);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.benefits__item:hover {
+  background: #43566B;
+}
+
+.benefits__item:hover p {
+  color: #fff;
+}
+
+.benefits__item:hover .benefits__top-icon {
+  background: #fff;
+}
+
+.benefits__item:hover .benefits__top-icon path {
+  fill: #232323;
 }
 
 .benefits__top {
@@ -602,6 +626,9 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .benefits__top-title {
@@ -669,6 +696,23 @@ nav {
   border-radius: 20px;
   max-width: 100%;
   width: 100%;
+}
+
+.stats-2 .stats__item {
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats-2 .stats__item-text {
+  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+  color: #43566B;
+}
+
+.stats-2 .stats__item-text a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .stats__item {
@@ -910,6 +954,30 @@ nav {
   margin-top: auto;
 }
 
+.call-btn__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 30px;
+  background-image: url(../img/call-btn-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.call-btn__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .footer {
   background: #43566B;
   padding: 50px 0 60px;
@@ -1110,6 +1178,10 @@ nav {
   .benefits-2 .benefits__wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
+  .benefits-4 .benefits__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1132,6 +1204,10 @@ nav {
   }
 
   .benefits-2 .benefits__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-4 .benefits__wrapper {
     grid-template-columns: 1fr;
   }
 
