@@ -181,7 +181,7 @@ section {
           justify-content: center;
   text-align: center;
   padding: 10px;
-  background: #FBFBFB;
+  background: transparent;
   border-radius: 10px;
   font-size: 20px;
   color: #43566B;
@@ -964,6 +964,8 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
   padding: 30px;
   border-radius: 30px;
@@ -975,7 +977,7 @@ nav {
 
 .call-btn__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: clamp(1.375rem, 1.33rem + 0.23vw, 1.5rem);
 }
 
 .footer {
@@ -1304,5 +1306,12 @@ nav {
 
   .simple__text {
     line-height: 1.2;
+  }
+
+  .call-btn__wrapper {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
