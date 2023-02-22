@@ -1185,6 +1185,42 @@ nav {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.dogovor {
+  padding-top: clamp(8.75rem, 7.386rem + 6.82vw, 12.5rem);
+}
+
+.dogovor__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+}
+
+.dogovor__text {
+  max-width: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.dogovor__download {
+  font-style: italic;
+  font-size: 18px;
+  color: #43566B;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.dogovor__download:hover {
+  text-decoration: underline;
+}
+
 .footer {
   background: #43566B;
   padding: 50px 0 60px;
