@@ -172,11 +172,10 @@ h6 {
 }
 
 .contact-form input[type=text]:focus,
+.contact-form input[type=tel]:focus,
+.contact-form input[type=email]:focus,
 .contact-form textarea:focus {
   outline: 1px solid #43566B;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .contact-form input[type=button] {
@@ -196,6 +195,7 @@ h6 {
 
 .modal__body {
   overflow: auto;
+  padding: 2px;
 }
 
 .modal__inner {
@@ -244,6 +244,11 @@ h6 {
 
 .modal__choice-link:hover {
   background: #E6EEF7;
+}
+
+.modal__choice-link.active {
+  background: #121212;
+  color: #fff;
 }
 
 .modal__checkbox {
@@ -358,6 +363,10 @@ h6 {
 
 section {
   padding-bottom: 50px;
+}
+
+#map {
+  height: 350px !important;
 }
 
 .btn {

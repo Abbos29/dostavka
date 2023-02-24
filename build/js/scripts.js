@@ -1,6 +1,44 @@
 // Custom Scripts
 // Custom scripts
 
+
+
+// const modalLinks = document.querySelectorAll('.modal__choice-link');
+
+// modalLinks.forEach(link => {
+//     link.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         this.classList.toggle('active');
+//     });
+// });
+
+
+// const modalLinks = document.querySelectorAll('.modal__choice-link');
+
+// modalLinks.forEach(link => {
+//     link.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         modalLinks.forEach(link => link.classList.remove('active'));
+//         this.classList.add('active');
+//     });
+// });
+
+
+const modalChoices = document.querySelectorAll('.modal__choice');
+
+modalChoices.forEach(choice => {
+    const modalLinks = choice.querySelectorAll('.modal__choice-link');
+
+    modalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            modalLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+
+
 // Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector('.burger')
