@@ -369,75 +369,47 @@
 
                 <!-- Modal -->
                 <div class="modal__wrapper">
-                    <div class="modal">
+                    <div class="modal modal-1">
                         <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-                        <div class="modal__title"><span>Подключиться к “Вся доставка”</span></div>
+                        <div class="modal__title"><span>Связаться с нами</span></div>
                         <div class="modal__body">
                             
-                            <form class="contact-form modal__form modal__form-2" id="contact-form">
+                            <form class="contact-form modal__form modal__form-1" id="contact-form">
                                 <div class="modal__inner box-1">
-                                    <label>Наименование Юр. лица или ИП<span>*</span></label>
-                                    <input request type="text" placeholder="Юр. лицо или ИП"/>
+                                    <label>Ваш статус<span>*</span></label>
+                                    <div class="modal__choice">
+                                        <div class="modal__choice-link">Отправитель</div>
+                                        <div class="modal__choice-link">Получатель</div>
+                                        <div class="modal__choice-link">Представитель партнера</div>
+                                    </div>
                                 </div>
-                
+
                                 <div class="modal__inner box-2">
-                                    <label>Город<span>*</span></label>
-                                    <input request type="text" placeholder="Например: Москва"/>
+                                    <label>Как к Вам обращаться<span>*</span></label>
+                                    <input request type="text" placeholder="Имя Фамилия"/>
                                 </div>
                 
                                 <div class="modal__inner box-3">
-                                    <label>Адрес пункта выдачи<span>*</span></label>
-                                    <input request type="text" placeholder="Улица, Дом"/>
-                                </div>
-                
-                                <div class="modal__inner box-4">
-                                    <label>Комментарии к адресу<span>*</span></label>
-                                    <textarea name="textarea" rows="3" cols="20" placeholder="(доп. инструкция для клиентов – как добраться, как найти пункт выдачи)"></textarea>
-                                </div>
-                
-                                <div class="modal__inner box-5">
-                                    <label>График работы<span>*</span></label>
-                                    <input request type="text" placeholder="Например: 10:00 - 21:00"/>
-                                </div>
-                
-                                <div class="modal__inner box-6">
-                                    <label>Наличие кассы в ПВЗ<span>*</span></label>
-                                    <div class="modal__choice">
-                                        <div class="modal__choice-link">Да</div>
-                                        <div class="modal__choice-link">Нет</div>
-                                    </div>
-                                </div>
-                
-                                <div class="modal__inner box-7">
-                                    <label>Есть ли у Вас опыт такого сотрудничества<span>*</span></label>
-                                    <div class="modal__choice">
-                                        <div class="modal__choice-link">Да</div>
-                                        <div class="modal__choice-link">Нет, для меня это новый опыт</div>
-                                    </div>
-                                </div>
-                
-                                <div class="modal__inner box-8">
-                                    <label>Как к Вам обращаться<span>*</span></label>
-                                    <input request type="text" placeholder="Имя"/>
-                                    <input request type="text" placeholder="Фамилия"/>
-                                </div>
-                
-                                <div class="modal__inner box-9">
                                     <label>Номер телефона<span>*</span></label>
                                     <input request type="tel" placeholder="8 123 456 78 90"/>
                                 </div>
                 
-                                <div class="modal__inner box-10">
+                                <div class="modal__inner box-4">
                                     <label>Email<span>*</span></label>
                                     <input request type="email" placeholder="mail@example.ru"/>
                                 </div>
-                
-                                <div class="modal__checkbox box-11">
-                                    <p class="modal__checkbox-item"><input request type="checkbox" name="text">Получение информационной рассылки от "Вся доставка"</p>
-                                    <p class="modal__checkbox-item"><input request type="checkbox" name="text">Я даю согласие на обработку своих персональных данных</p>
+
+                                <div class="modal__inner box-5">
+                                    <label>Тема сообщения<span>*</span></label>
+                                    <input request type="email" placeholder="Например: Сотрудничество"/>
+                                </div>
+
+                                <div class="modal__inner box-6">
+                                    <label>Комментарии к адресу<span>*</span></label>
+                                    <textarea name="textarea" rows="10" cols="20" placeholder="Комментарий или сообщение"></textarea>
                                 </div>
                 
-                                <input request type="button" class="btn box-12" value="Отправить"/>
+                                <input request type="button" class="btn box-7" value="Отправить"/>
                             </form>
                 
                         </div>
@@ -454,7 +426,7 @@
                     </svg>
                 </div>
 
-                <a class="grid__item-btn btn" href="#">Найти свое отделение</a>
+                <a class="grid__item-btn btn" href="punkti-vidachi.html">Найти свое отделение</a>
                 <!-- как оцентрировать абсолютный блок в css -->
             </div>
         </div>
