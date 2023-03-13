@@ -509,6 +509,10 @@ section {
   background-color: #FBFBFB;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -1455,11 +1459,14 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
 }
 
 .table__inner {
   overflow: auto !important;
+}
+
+.table__inner:not(:first-child) {
+  padding-top: 50px;
 }
 
 .table__title {
