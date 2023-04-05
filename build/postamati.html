@@ -53,11 +53,11 @@
                 <p class="hero__subtitle">Постамат представляет собой терминал автоматически открывающихся ячеек разного размера. Через постаматы очень удобно <a href="#">получать или отправлять заказы.</a></p>
             </div>
 
-            <div class="hero__box">
+            <form class="hero__box" id="contact-form" method="post" action="send.php">
                 <p class="hero__box-title">Номер заказа</p>
-                <input class="hero__box-input" type="text" placeholder="000000-00">
-                <a class="hero__box-btn btn" href="#">Поиск</a>
-            </div>
+                <input class="hero__box-input" type="text" placeholder="000000-00" required>
+                <button class="hero__box-btn btn" type="submit">Поиск</button>
+            </form>
         </div>
 
         <div class="hero__img">

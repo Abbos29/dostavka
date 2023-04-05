@@ -748,6 +748,11 @@ nav {
   color: #1E1E1E;
 }
 
+.hero__box-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
 .hero__img {
   z-index: 1;
   margin-top: 90px;

@@ -53,11 +53,11 @@
                 <p class="hero__subtitle">Сервис срочной курьерской доставки по городу. Решаем вопрос доставки и логистики для бизнеса</p>
             </div>
 
-            <div class="hero__box">
+            <form class="hero__box" id="contact-form" method="post" action="send.php">
                 <p class="hero__box-title">Номер заказа</p>
-                <input class="hero__box-input" type="text" placeholder="000000-00">
-                <a class="hero__box-btn btn" href="#">Поиск</a>
-            </div>
+                <input class="hero__box-input" type="text" placeholder="000000-00" required>
+                <button class="hero__box-btn btn" type="submit">Поиск</button>
+            </form>
         </div>
 
         <div class="hero__img">
@@ -65,6 +65,8 @@
         </div>
     </div>
 </section>
+
+
 
 <!-- Grid-1 -->
 <section class="grid-1">
@@ -389,5 +391,7 @@
 </body>
 
 <script src="./js/scripts.min.js"></script>
+
+
 
 </html>

@@ -124,3 +124,24 @@ bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
 
 
 
+
+// Маска для 000000-00
+
+const input = document.querySelector('.hero__box-input');
+
+
+input.addEventListener('input', (event) => {
+    const inputValue = event.target.value;
+    
+    // ограничиваем ввод
+    if (inputValue.length > 9) {
+        event.target.value = inputValue.slice(0, 9);
+    }
+    
+    // добавляем разделитель
+    if (inputValue.length === 6 && inputValue.indexOf('-') === -1) {
+        event.target.value = inputValue.slice(0, 6) + '-' + inputValue.slice(6);
+    }
+});
+
+
